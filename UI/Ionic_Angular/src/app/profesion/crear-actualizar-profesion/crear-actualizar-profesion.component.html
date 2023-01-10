@@ -1,0 +1,8 @@
+<ion-content>
+  <ion-item>
+    <ion-label position="floating">Nombre</ion-label>
+    <ion-input placeholder="Ingresar Nombre" type="text" [(ngModel)]="Nombre"></ion-input>
+  </ion-item>
+  <ion-button (click)="crearProfesion()">Agregar</ion-button>
+  <ion-button (click)="actualizarProfesion()" *ngIf="pro.Id!==0">Editar</ion-button>
+</ion-content>
